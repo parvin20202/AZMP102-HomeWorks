@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main #form::after, main #form fieldset textarea, main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@button {}
+main {
+  background-image: url(../images/bg.gif);
+  height: 100vh;
+}
+main h1 {
+  color: #fff;
+  position: absolute;
+  max-width: 150px;
+  padding-top: 350px;
+  left: 150px;
+  z-index: 5;
+  visibility: visible;
+}
+main #form {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+main #form fieldset {
+  border-color: #224251;
+  padding: 20px;
+  transition: box-shadow 0.7s ease-in-out;
+}
+main #form fieldset label,
+main #form fieldset span,
+main #form fieldset legend {
+  color: #fff;
+}
+main #form fieldset:hover {
+  box-shadow: 1px 1px 14px 6px #fd6632;
+  -webkit-box-shadow: 1px 1px 14px 6px #fd6632;
+  -moz-box-shadow: 1px 1px 14px 6px #fd6632;
+}
+main #form fieldset input {
+  background-image: url(../images/pattern.png);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  border: 4px solid #224251;
+}
+main #form fieldset textarea {
+  background-image: url(../images/fghgfh.png);
+  margin-bottom: 5px;
+  border: 4px solid #224251;
+}
+main #form:hover::after {
+  display: none !important;
+}
+main #form::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../images/giphy.gif);
+  background-position: unset;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+main:hover h1 {
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */

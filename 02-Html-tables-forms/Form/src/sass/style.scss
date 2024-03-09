@@ -1,0 +1,89 @@
+// Imports sass
+@import "./variables";
+// End Imports sass
+
+// Reset Layout
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// End Reset Layout
+
+%bckg_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@button {
+}
+main {
+  background-image: url(../images/bg.gif);
+  @extend %bckg_img;
+  height: 100vh;
+  h1 {
+    color: #fff;
+    position: absolute;
+    max-width: 150px;
+    padding-top: 350px;
+    left: 150px;
+    z-index: 5;
+    visibility: visible;
+  }
+  #form {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    fieldset {
+      border-color: $color_main;
+      padding: 20px;
+      transition: box-shadow 0.7s ease-in-out;
+      label,
+      span,
+      legend {
+        color: #fff;
+      }
+      &:hover {
+        box-shadow: 1px 1px 14px 6px $color_main2;
+        -webkit-box-shadow: 1px 1px 14px 6px $color_main2;
+        -moz-box-shadow: 1px 1px 14px 6px $color_main2;
+      }
+      input {
+        background-image: url(../images/pattern.png);
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        color: #fff;
+        border: 4px solid $color_main;
+      }
+      textarea {
+        background-image: url(../images/fghgfh.png);
+        @extend %bckg_img;
+        margin-bottom: 5px;
+        border: 4px solid $color_main;
+      }
+    }
+    &:hover {
+      &::after {
+        display: none !important;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      background-image: url(../images/giphy.gif);
+      @extend %bckg_img;
+      background-position: unset;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &:hover {
+    h1 {
+      visibility: hidden;
+    }
+  }
+}

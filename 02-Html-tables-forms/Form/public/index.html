@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NFS registration page" />
+    <meta name="keywords" content="nfs,need for speed,race game" />
+    <meta name="author" content="Parvin Alasgar" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="icon" href="../src/images/logo.png" />
+    <title>Need For Speed Registration</title>
+  </head>
+  <body>
+    <main>
+      <h1>Welcome Registration page</h1>
+      <form action="" id="form">
+        <fieldset>
+          <legend>Registration</legend>
+          <label for="name">Name:</label>
+          <input
+            required
+            id="name"
+            type="text"
+            maxlength="5"
+            placeholder="Enter your name."
+          />
+          <br />
+          <label for="fav">Fav number:</label>
+          <input
+            required
+            type="number"
+            min="6"
+            max="30"
+            id="fav"
+            placeholder="Enter fav number."
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            required
+            type="email"
+            id="email"
+            placeholder="Enter email address."
+          />
+          <br />
+          <span>Gender:</span>
+          <input required type="radio" name="gender" checked id="male" />
+          <label for="male">Male</label>
+          <input required type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <br />
+          <span>Country:</span>
+          <select>
+            <option value="usa">USA</option>
+            <option value="france">France</option>
+            <option value="china">China</option>
+          </select>
+          <br />
+          <span style="display: block">Message:</span>
+          <textarea name="" id="" cols="50" rows="10"></textarea>
+          <br />
+          <label for="subscribe">Subscribe to newsletter:</label>
+          <input required type="checkbox" id="subscribe" />
+          <br />
+          <label for="file">Upload file:</label>
+          <input required type="file" multiple id="file" />
+          <br />
+          <label for="color">Favorite Color:</label>
+          <input required type="color" id="color" />
+          <br />
+          <label for="web">Personal Website:</label>
+          <input
+            required
+            type="text"
+            placeholder="Enter persona web address:"
+          />
+          <br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </fieldset>
+        <audio autoplay controls>
+          <source
+            src="../src/sound/Lil-Jon-The-East-Side-Boyz-Get-Low.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </form>
+     
+    </main>
+  </body>
+</html>

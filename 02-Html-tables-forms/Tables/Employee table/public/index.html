@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee table</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <h1>Employees Data Table</h1>
+    <!-- Table alternative border
+      <table border="1" style="border-collapse: collapse;">
+    -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2">Employee ID</th>
+          <th rowspan="2">Full Name</th>
+          <th rowspan="2">Position</th>
+          <th rowspan="2">Salary</th>
+          <th colspan="2">Department</th>
+          <th rowspan="2">Join Date</th>
+        </tr>
+        <tr>
+          <th>Department Name</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>John Doe</td>
+          <td>Manager</td>
+          <td>$60,000</td>
+          <td>HR</td>
+          <td>New York</td>
+          <td>2020-01-15</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Jane Smith</td>
+          <td>Developer</td>
+          <td>$50,000</td>
+          <td>IT</td>
+          <td>San Francisco</td>
+          <td>2019-11-22</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Mary Johnson</td>
+          <td>Desinger</td>
+          <td>$45,000</td>
+          <td>Design</td>
+          <td>Los Angeles</td>
+          <td>2020-03-10</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

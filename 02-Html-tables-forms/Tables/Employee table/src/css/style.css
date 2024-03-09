@@ -1,0 +1,20 @@
+body {
+  background-image: url(../images/Abstract-Color-Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+body table {
+  transform: translateY(250px);
+  margin: auto;
+}
+body table td {
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  opacity: 0.2;
+}
+body table td:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
