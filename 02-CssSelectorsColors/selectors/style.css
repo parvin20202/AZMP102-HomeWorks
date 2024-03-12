@@ -1,0 +1,67 @@
+/* *{Qeyd olunan bu elementleri secir} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  display: block;
+}
+
+/* ul { butun ul tag'ni secir} */
+ul {
+  display: flex;
+  list-style: none;
+}
+
+/* ul a {ul'nin daxilindeki butun a tag'lari secir */
+ul a {
+  text-decoration: none;
+}
+
+/* li.green {klassi green olan li taglari secir */
+li.green {
+  background-color: green;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+/* li:nth-child(even) {butun tek li'leri secir */
+ul li:nth-child(even) {
+  background-color: chocolate;
+  padding: 5px 20px;
+}
+
+/* span.text {klassi text olan spani secir} */
+span.text {
+  color: rgb(61, 194, 194);
+}
+/* input:required {required teleb eden butun inputlari secir} */
+input:required {
+  background-color: rgb(123, 209, 212);
+}
+
+/* input:disabled {disable olunmus inputu secir} */
+input:disabled {
+  border: 2px dashed fuchsia;
+}
+
+/* form::after {formdan sonra nese elave edir ::before ise evelin}*/
+form::after {
+  content: "";
+  background-color: aquamarine;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+/* p::after {p daxilinde yazilmis sozun axrina Code Academy sozu yazir ::before ise eveline} */
+p::after {
+  content: " Code Academy";
+}
+
+/* p::first-letter {p tagindeki yazilmis metnin ilk herfini secir */
+p::first-letter {
+  color: burlywood;
+}

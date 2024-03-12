@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.box {
+  margin: 20px;
+  height: 235px;
+  border: 10px solid rgb(255, 0, 221);
+  background-color: bisque;
+  cursor: pointer;
+  padding: 50px;
+  transition: background-color 0.7s ease-in-out;
+}
+.box .content {
+  padding: 20px;
+  background-color: aquamarine;
+  border: 10px solid blue;
+  transition: all 0.7s ease-in-out;
+}
+.box .content:hover {
+  background-color: blue;
+  border-color: #fff;
+}
+.box:hover {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
