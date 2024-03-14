@@ -1,0 +1,9 @@
+nav {
+  height: 60px;
+  background-color: $colorMain;
+  li {
+    &:nth-child(5){
+        background-color: $colorMain2;
+    }
+  }
+}
