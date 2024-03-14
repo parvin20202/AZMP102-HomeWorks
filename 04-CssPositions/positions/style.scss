@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#positions {
+  height: 200vh;
+  .main-div {
+    background-color: antiquewhite;
+    border: 4px solid green;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 90px;
+    left: 250px;
+    .red {
+      background-color: red;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+    .gray {
+      background-color: gray;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      z-index: 3;
+      opacity: 0.8;
+    }
+    .yellow {
+      background-color: yellow;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      z-index: 2;
+    }
+    .pink {
+      background-color: pink;
+      width: 60px;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      right: 0;
+    }
+  }
+  .corner {
+    position: fixed;
+    background-color: aqua;
+    width: 60px;
+    height: 60px;
+    right: 0;
+  }
+}

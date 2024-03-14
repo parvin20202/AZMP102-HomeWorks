@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#positions {
+  height: 200vh;
+}
+#positions .main-div {
+  background-color: antiquewhite;
+  border: 4px solid green;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  top: 90px;
+  left: 250px;
+}
+#positions .main-div .red {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+#positions .main-div .gray {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 3;
+  opacity: 0.8;
+}
+#positions .main-div .yellow {
+  background-color: yellow;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  z-index: 2;
+}
+#positions .main-div .pink {
+  background-color: pink;
+  width: 60px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+#positions .corner {
+  position: fixed;
+  background-color: aqua;
+  width: 60px;
+  height: 60px;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
