@@ -50,7 +50,7 @@
   height: 60px;
   position: sticky;
   top: 0;
-  right: 0;
+  left: 100%;
 }
 #positions .corner {
   position: fixed;
