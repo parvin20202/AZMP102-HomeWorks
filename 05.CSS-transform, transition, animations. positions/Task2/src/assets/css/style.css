@@ -1,0 +1,25 @@
+#blog .wrapper {
+  cursor: pointer;
+}
+#blog .wrapper span {
+  bottom: 70px;
+}
+#blog .wrapper img {
+  transition: transform 0.4s;
+}
+#blog .wrapper:hover img {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  #blog span {
+    bottom: 30px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #blog p,
+  #blog h2,
+  #blog span {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=style.css.map */

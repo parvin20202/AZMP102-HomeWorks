@@ -1,0 +1,32 @@
+html {
+  font-size: 1rem !important;
+}
+
+#films .wrapper {
+  cursor: pointer;
+}
+#films .wrapper h5 {
+  transition: background-color 0.4s;
+}
+#films .wrapper .img img {
+  transition: transform 0.4s;
+  filter: grayscale(0.8);
+}
+#films .wrapper .img h6 {
+  right: 0;
+  filter: grayscale(1);
+}
+#films .wrapper:hover h5 {
+  background-color: #000;
+  color: #fff;
+}
+#films .wrapper:hover .img h6 {
+  filter: grayscale(0);
+}
+#films .wrapper:hover .img img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0);
+}
+#films .wrapper .icons img {
+  width: 45px;
+}/*# sourceMappingURL=style.css.map */
