@@ -1,0 +1,88 @@
+html {
+  font-size: 1rem;
+}
+
+// Nav
+#nav {
+  background-color: $colorMain;
+  li {
+    transition: background-color 0.7s;
+    &:hover {
+      background-color: $colorMain2;
+    }
+  }
+}
+// Header
+#header {
+  background-color: $colorMain2;
+  h1 {
+    font-size: 4rem;
+  }
+  .line {
+    height: 0.2rem;
+  }
+}
+// Main
+main {
+  // Portfolio
+  #portfolio {
+    h2 {
+      color: $colorMain;
+      font-size: 3rem;
+    }
+    i {
+      color: $colorMain;
+    }
+    .wrapper {
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: "+";
+        display: block;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 6rem;
+        background-color: $colorMain2;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        color: #fff;
+        transition: opacity 0.3s;
+      }
+      &:hover::after {
+        opacity: 0.8;
+      }
+    }
+  }
+  #about {
+    background-color: $colorMain2;
+    h2 {
+      font-size: 3rem;
+    }
+    a {
+      transition: background-color 0.7s;
+      &:hover {
+        background-color: #fff;
+        color: #000 !important;
+      }
+    }
+  }
+  #contact {
+    h2 {
+      font-size: 3rem;
+    }
+    i {
+      color: $colorMain;
+    }
+    .btn {
+      background-color: $colorMain2;
+    }
+  }
+}
+
+footer {
+  background-color: $colorMain;
+}
