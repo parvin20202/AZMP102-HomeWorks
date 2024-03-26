@@ -1,0 +1,433 @@
+main #find .wrapper, main #events .wrapper, main #about, #header .content, #header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+html {
+  font-size: 1rem !important;
+}
+
+#nav {
+  background: url(/assets/images/icegif-4148.gif) #0c5b47;
+  background-color: #0c5b47;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#nav li a {
+  transition: color 0.5s;
+}
+#nav li a:hover {
+  color: #faba84 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.5rem;
+}
+#nav span {
+  font-size: 0.9rem !important;
+}
+
+#header {
+  background-image: url(/assets/images/hero.png);
+  position: relative;
+  margin-top: 4.5rem;
+  padding: 20rem;
+}
+#header .content {
+  background-image: url(/assets/images/seamless-pattern-elements-flower-ditsy-vector.jpg);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+#header .content h1,
+#header .content h3 {
+  color: #0c5b47;
+  color: transparent;
+}
+#header .content h1 {
+  font-size: 4rem;
+}
+#header .content h3 {
+  font-size: 3rem;
+}
+
+#footer {
+  color: #0c5b47 !important;
+}
+#footer input {
+  color: #0c5b47 !important;
+  outline: none !important;
+}
+#footer input::-moz-placeholder {
+  color: #0c5b47 !important;
+}
+#footer input::placeholder {
+  color: #0c5b47 !important;
+}
+#footer input[type=submit] {
+  background-color: rgba(12, 91, 71, 0.5);
+}
+#footer li {
+  transition: transform 0.5s;
+}
+#footer li a {
+  color: #0c5b47 !important;
+}
+#footer li:hover {
+  transform: translateX(1rem);
+}
+#footer i {
+  color: #0c5b47;
+}
+
+@media only screen and (max-width: 1400px) {
+  #header {
+    margin-top: 3.8rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #header {
+    margin-top: 2.9rem;
+  }
+  #florist h2,
+  #florist h6,
+  #florist p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #florist h2,
+  #florist h6 {
+    font-size: 1.5rem;
+  }
+  #florist p {
+    display: none;
+  }
+  #florist .image {
+    justify-content: center !important;
+  }
+  #florist .image::after {
+    display: none;
+  }
+  #florist .image img {
+    width: unset !important;
+    height: unset !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #nav {
+    padding: 0.7rem 0 !important;
+  }
+  #header {
+    padding: 15rem !important;
+  }
+  #header h1 {
+    font-size: 3rem !important;
+  }
+  #header h3 {
+    font-size: 2rem !important;
+  }
+  #florist p {
+    display: block;
+  }
+  #florist .image {
+    display: none !important;
+  }
+  #mission h2 {
+    font-size: 2rem !important;
+  }
+  #mission p {
+    font-size: 0.9rem !important;
+  }
+  #mission .right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #nav .logo {
+    display: none !important;
+  }
+  #nav ul {
+    justify-content: center !important;
+  }
+  #header {
+    padding: 10rem !important;
+  }
+  #header h1 {
+    font-size: 2rem !important;
+  }
+  #header h3 {
+    font-size: 1rem !important;
+  }
+  #florist p {
+    display: none !important;
+  }
+  #about h2 {
+    font-size: 2rem !important;
+  }
+  #about p {
+    font-size: 1rem !important;
+  }
+  #portfolio h2 {
+    font-size: 2rem !important;
+  }
+  #portfolio .flwr {
+    display: none;
+  }
+  #price h2 {
+    font-size: 2rem !important;
+  }
+  #events h2 {
+    font-size: 2rem !important;
+  }
+  #contact h2 {
+    font-size: 2rem !important;
+  }
+  #clients h2 {
+    font-size: 2rem !important;
+  }
+  #find h2 {
+    font-size: 2rem !important;
+  }
+  #subscribe h2 {
+    font-size: 2rem !important;
+  }
+  #footer h2 {
+    font-size: 2rem !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #main #banner img {
+    width: 100% !important;
+  }
+}
+body {
+  background-image: url(/assets/images/bg.png);
+}
+
+main #florist .wrapper .content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #florist .wrapper .content h2,
+main #florist .wrapper .content h6,
+main #florist .wrapper .content p {
+  color: #0c5b47;
+}
+main #florist .image::after {
+  content: "";
+  background: url(/assets/images/brown-uniquewise-vases-qi004194-c3_600.avif);
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  width: 20rem;
+  z-index: 1;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+main #florist .image img {
+  width: 20rem !important;
+  height: 30rem;
+  z-index: 1;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+main #about {
+  background-image: url(/assets/images/b5c021687ce7499f40a0b94a39c997ca.jpg);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+main #about h2 {
+  color: transparent;
+  font-size: 3rem;
+}
+main #about p {
+  color: transparent;
+  font-size: 2rem;
+}
+main #about img {
+  cursor: pointer;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  transition: filter 0.6s;
+  filter: grayscale(0.6);
+}
+main #about img:hover {
+  filter: grayscale(0);
+}
+main #mission .content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #mission h2,
+main #mission p {
+  color: #0c5b47;
+}
+main #mission h2 {
+  font-size: 3rem;
+}
+main #mission img {
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+main #other .wrapper {
+  cursor: pointer;
+}
+main #other .wrapper ul {
+  background-color: rgba(12, 91, 71, 0.5);
+}
+main #other .wrapper ul i {
+  margin-right: 1rem;
+}
+main #banner img {
+  height: 6rem;
+  filter: blur(0.2rem);
+}
+main #banner .content {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+main #portfolio h6,
+main #portfolio h2,
+main #portfolio h3,
+main #portfolio p,
+main #portfolio a {
+  color: #0c5b47;
+}
+main #portfolio h2 {
+  font-size: 3rem;
+}
+main #portfolio h6 {
+  font-size: 1.5rem;
+}
+main #portfolio .wrapper .content {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #portfolio .wrapper .content a {
+  border-color: #0c5b47 !important;
+}
+main #portfolio img {
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+main #price h5,
+main #price p,
+main #price h2,
+main #price h6 {
+  color: #0c5b47;
+}
+main #price h2 {
+  font-size: 3rem;
+}
+main #price h6 {
+  font-size: 1.5rem;
+}
+main #price .wrapper {
+  cursor: pointer;
+}
+main #price .wrapper img {
+  height: 15rem;
+  transition: transform 0.5s;
+}
+main #price .wrapper:hover img {
+  transform: scale(1.1);
+}
+main #events {
+  color: #0c5b47;
+}
+main #events h2 {
+  font-size: 3rem;
+}
+main #events h6 {
+  font-size: 1.5rem;
+}
+main #events .wrapper {
+  background-image: url(/assets/images/floral-border-with-flowers_881695-930.avif);
+  padding: 7rem 0;
+}
+main #events .wrapper a {
+  border-color: #0c5b47 !important;
+  color: #0c5b47;
+  background-color: rgba(12, 91, 71, 0.4);
+}
+main #events .second {
+  background-image: url(/assets/images/spring-flower-frame-background-free-vector.jpg);
+}
+main #events .third {
+  background-image: url(/assets/images/hand-drawn-floral-pattern-peach-tones_52683-63665.avif);
+}
+main #contact {
+  color: #0c5b47;
+}
+main #contact h2 {
+  font-size: 3rem;
+}
+main #contact h6 {
+  font-size: 1.5rem;
+}
+main #contact i {
+  font-size: 1.3rem;
+  color: #0c5b47;
+}
+main #contact img {
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  height: 25rem;
+}
+main #clients h2 {
+  font-size: 3rem;
+  color: #0c5b47;
+}
+main #clients .image {
+  cursor: pointer;
+}
+main #clients .image:hover img {
+  transition: transform 0.5s;
+}
+main #clients .image:hover img {
+  transform: scale(1.1);
+}
+main #find {
+  color: #0c5b47;
+}
+main #find h2 {
+  font-size: 3rem;
+}
+main #find h6 {
+  font-size: 1.5rem;
+}
+main #find a {
+  color: #0c5b47;
+}
+main #find .wrapper {
+  background-image: url("/assets/images/pngimg.com - floral_frame_PNG189.png");
+  background-size: cover;
+  padding: 10rem 0;
+}
+main #subscribe {
+  color: #0c5b47;
+}
+main #subscribe h2 {
+  font-size: 3rem;
+}
+main #subscribe input {
+  color: #0c5b47 !important;
+  outline: none !important;
+  border-color: #0c5b47 !important;
+}
+main #subscribe input::-moz-placeholder {
+  color: #0c5b47 !important;
+}
+main #subscribe input::placeholder {
+  color: #0c5b47 !important;
+}
+main #subscribe input[type=submit] {
+  background-color: rgba(12, 91, 71, 0.5);
+}/*# sourceMappingURL=main.css.map */

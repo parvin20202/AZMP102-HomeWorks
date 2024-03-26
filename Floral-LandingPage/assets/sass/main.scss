@@ -1,0 +1,270 @@
+@import "./utils/variables", "./utils/extends";
+@import "./base/base";
+@import "./layouts/navigation", "./layouts/header", "./layouts/footer",
+  "./layouts/responsive";
+
+body {
+  background-image: url(/assets/images/bg.png);
+}
+// Main
+main {
+  // Florist
+  #florist {
+    .wrapper {
+      .content {
+        h2,
+        h6,
+        p {
+          color: $color-first;
+        }
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .image {
+      &::after {
+        content: "";
+        background: url(/assets/images/brown-uniquewise-vases-qi004194-c3_600.avif);
+        top: 15%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        width: 20rem;
+        z-index: 1;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+      }
+      img {
+        width: 20rem !important;
+        height: 30rem;
+        z-index: 1;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+      }
+    }
+  }
+  // About
+  #about {
+    background-image: url(/assets/images/b5c021687ce7499f40a0b94a39c997ca.jpg);
+    @extend %background-image;
+    background-clip: text;
+    h2 {
+      color: transparent;
+      font-size: 3rem;
+    }
+    p {
+      color: transparent;
+      font-size: 2rem;
+    }
+    img {
+      cursor: pointer;
+      border-top-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      transition: filter 0.6s;
+      filter: grayscale(0.6);
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+  // Mission
+  #mission {
+    .content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h2,
+    p {
+      color: $color-first;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    img {
+      border-top-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+    }
+  }
+  // Other
+  #other {
+    .wrapper {
+      cursor: pointer;
+      ul {
+        background-color: rgba($color: $color-first, $alpha: 0.5);
+        i {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  // Banner
+  #banner {
+    img {
+      height: 6rem;
+      filter: blur(0.2rem);
+    }
+    .content {
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  // Portfolio
+  #portfolio {
+    h6,
+    h2,
+    h3,
+    p,
+    a {
+      color: $color-first;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h6 {
+      font-size: 1.5rem;
+    }
+    .wrapper {
+      .content {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        a {
+          border-color: $color-first !important;
+        }
+      }
+    }
+    img {
+      border-top-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+    }
+  }
+  // Price
+  #price {
+    h5,
+    p,
+    h2,
+    h6 {
+      color: $color-first;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h6 {
+      font-size: 1.5rem;
+    }
+    .wrapper {
+      cursor: pointer;
+      img {
+        height: 15rem;
+        transition: transform 0.5s;
+      }
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  // Events
+  #events {
+    color: $color-first;
+    h2 {
+      font-size: 3rem;
+    }
+    h6 {
+      font-size: 1.5rem;
+    }
+    .wrapper {
+      background-image: url(/assets/images/floral-border-with-flowers_881695-930.avif);
+      @extend %background-image;
+      padding: 7rem 0;
+      a {
+        border-color: $color-first !important;
+        color: $color-first;
+        background-color: rgba($color: $color-first, $alpha: 0.4);
+      }
+    }
+    .second {
+      background-image: url(/assets/images/spring-flower-frame-background-free-vector.jpg);
+    }
+    .third {
+      background-image: url(/assets/images/hand-drawn-floral-pattern-peach-tones_52683-63665.avif);
+    }
+  }
+  // Contact
+  #contact {
+    color: $color-first;
+    h2 {
+      font-size: 3rem;
+    }
+    h6 {
+      font-size: 1.5rem;
+    }
+    i {
+      font-size: 1.3rem;
+      color: $color-first;
+    }
+    img {
+      border-top-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      height: 25rem;
+    }
+  }
+  // Clients
+  #clients {
+    h2 {
+      font-size: 3rem;
+      color: $color-first;
+    }
+    .image {
+      cursor: pointer;
+      &:hover {
+        img {
+          transition: transform 0.5s;
+        }
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  // Find
+  #find {
+    color: $color-first;
+    h2 {
+      font-size: 3rem;
+    }
+    h6 {
+      font-size: 1.5rem;
+    }
+    a {
+      color: $color-first;
+    }
+    .wrapper {
+      background-image: url("/assets/images/pngimg.com\ -\ floral_frame_PNG189.png");
+      @extend %background-image;
+      background-size: cover;
+      padding: 10rem 0;
+    }
+  }
+  // Subscribe
+  #subscribe {
+    color: $color-first;
+    h2 {
+      font-size: 3rem;
+    }
+    input {
+      color: $color-first !important;
+      outline: none !important;
+      border-color: $color-first !important;
+      &::placeholder {
+        color: $color-first !important;
+      }
+    }
+    input[type="submit"] {
+      background-color: rgba($color: $color-first, $alpha: 0.5);
+    }
+  }
+}
