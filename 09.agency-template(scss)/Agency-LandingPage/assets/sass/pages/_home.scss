@@ -1,0 +1,90 @@
+// Main
+#main {
+  // Services
+  #services {
+    padding: 4rem 0 !important;
+    i {
+      color: #fff;
+      background-color: $primary-color;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    @include for-small-devices {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+  // Portfolio
+  #portfolio {
+    h2 {
+      font-size: 3rem;
+    }
+    cursor: pointer;
+    .wrapper {
+      &:hover .image::after {
+        opacity: 0.9;
+      }
+      .image {
+        &::after {
+          content: "+";
+          position: absolute;
+          background-color: $primary-color;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 5rem;
+          color: #fff;
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+      }
+    }
+
+    @include for-small-devices {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+  // About
+  #about {
+    h2 {
+      font-size: 3rem;
+    }
+    @include for-small-devices {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+  // Team
+  #team {
+    h2 {
+      font-size: 3rem;
+    }
+    @include for-small-devices {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+  // Contact
+  #contact {
+    background-image: url(../images/map-image.png);
+    @extend %background-img;
+    h2 {
+      font-size: 3rem;
+    }
+    @include for-small-devices {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
