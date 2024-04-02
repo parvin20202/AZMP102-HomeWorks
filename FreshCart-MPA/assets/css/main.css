@@ -1,0 +1,109 @@
+html {
+  font-size: 1rem !important; }
+
+.primary-btn {
+  background-color: #0aad0a;
+  transition: background-color 0.5s; }
+  .primary-btn:hover {
+    background-color: green; }
+
+#header .header-top .lang img {
+  width: 1.5rem; }
+
+@media (max-width: 768px) {
+  #header .header-top p {
+    text-align: center; }
+  #header .header-top .lang {
+    display: none !important; } }
+
+@media only screen and (max-width: 576px) {
+  #header .header-top {
+    display: none !important; } }
+
+#header .header-middle i {
+  font-size: 1rem; }
+
+#header .header-middle span {
+  padding: 0.1rem 0.4rem;
+  right: 0.2rem;
+  font-size: 0.5rem; }
+
+#header .navbar a {
+  transition: color 0.5s; }
+  #header .navbar a:hover {
+    color: #0aad0a !important; }
+
+#header .navbar .dropdown ul {
+  width: 12rem;
+  visibility: hidden;
+  transform: translateY(2rem);
+  transition: transform 0.5s; }
+
+#header .navbar .dropdown:hover ul {
+  visibility: visible !important;
+  transform: unset; }
+
+@media (max-width: 768px) {
+  #header .navbar li:nth-child(1) {
+    display: none !important; }
+  #header .navbar li a {
+    font-size: 0.9rem; } }
+
+@media only screen and (max-width: 576px) {
+  #header .navbar i {
+    display: none; } }
+
+#main #hero {
+  margin-top: 10rem;
+  padding: 5rem 0; }
+  #main #hero .content {
+    padding: 5rem;
+    top: 50%;
+    transform: translateY(-50%); }
+  @media (max-width: 768px) {
+    #main #hero h1 {
+      font-size: 1rem; }
+    #main #hero p {
+      font-size: 1rem; } }
+
+#main #category .card {
+  transition: border-color 0.5s;
+  cursor: pointer;
+  height: 12rem; }
+  #main #category .card:hover {
+    border-color: #0aad0a; }
+
+#main #banner .banner .banner-content {
+  left: 2rem;
+  bottom: 2rem; }
+
+#main #product .card,
+#main #best .card {
+  cursor: pointer;
+  transition: border-color 0.5s; }
+  #main #product .card:hover,
+  #main #best .card:hover {
+    border-color: #0aad0a; }
+    #main #product .card:hover .card-icons,
+    #main #best .card:hover .card-icons {
+      visibility: visible; }
+  #main #product .card .card-icons,
+  #main #best .card .card-icons {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden; }
+    #main #product .card .card-icons i,
+    #main #best .card .card-icons i {
+      background-color: #fff;
+      transition: background-color 0.5s; }
+      #main #product .card .card-icons i:hover,
+      #main #best .card .card-icons i:hover {
+        background-color: #0aad0a;
+        color: white; }
+
+#main #feature i {
+  color: #0aad0a; }
+
+#main #feature h6 {
+  margin: 1rem 0; }

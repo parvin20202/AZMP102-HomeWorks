@@ -1,0 +1,78 @@
+// Main
+#main {
+  // Hero
+  #hero {
+    margin-top: 10rem;
+    padding: 5rem 0;
+    .content {
+      padding: 5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    @include for-medium-devices {
+      h1 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  // Category
+  #category {
+    .card {
+      transition: border-color 0.5s;
+      cursor: pointer;
+      &:hover {
+        border-color: $primary-color;
+      }
+      height: 12rem;
+    }
+  }
+  // Banner
+  #banner {
+    .banner {
+      .banner-content {
+        left: 2rem;
+        bottom: 2rem;
+      }
+    }
+  }
+  //Product
+  #product,
+  #best {
+    .card {
+      cursor: pointer;
+      transition: border-color 0.5s;
+      &:hover {
+        border-color: $primary-color;
+        .card-icons {
+          visibility: visible;
+        }
+      }
+      .card-icons {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        i {
+          background-color: #fff;
+          transition: background-color 0.5s;
+          &:hover {
+            background-color: $primary-color;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  // Feature
+  #feature {
+    i {
+      color: $primary-color;
+    }
+    h6 {
+      margin: 1rem 0;
+    }
+  }
+}
