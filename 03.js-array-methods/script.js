@@ -82,22 +82,57 @@ replaceName.forEach((item) => {
 });
 console.log(replaceName);
 
-//Salam Muellim asagidakilar reduce metoduna aid olduguna gore tam yaxsi basa dusmemisem deye yazmaqda cetinlik cekdim dersden sizden sorusub yazmadiqlarimi yazcacam
-
 // 5) "name"-i en uzun olan obyekti tapin
 
 // 6) "name"-i en uzun olan obyektin key'ni tapin
+let namenew = 0;
+arr.forEach((item) => {
+  if (item.name > namenew) {
+    namenew = item.name;
+  }
+});
+
+console.log(arr.filter((item) => (item.name = namenew).key));
 
 // 7)  "name"-i en uzun olan obyektin indexin kvadratini hesablayin
 
 // 8) "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin. (filter)
+const lengthUp4 = arr.filter((item) => item.name > 4);
+console.log(lengthUp4);
 
 // 9)  en boyuk "key" - i olan obyektin "name"-i ni tapin
+let max = 0;
+let name = "";
+arr.forEach((item) => {
+  if (item.key > max) {
+    max = item.key;
+    name = item.name;
+  }
+});
+console.log(`max ${max} +${name}`);
 
 // 10) terkibinde 2 'l' (el) herfi olan obyekt(ler)in index(ler)ini tapin.
+let index = [];
 
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i].name.includes("el")) {
+    index.push(i);
+  }
+}
+
+console.log(index);
 // 10) keylərin cəmini tapın
-
+let sumkey = 0;
+arr.forEach((item) => {
+  sumkey += item.key;
+});
+console.log(sumkey);
 // 11) terkibinde ən az 2 't' herfi olan obyekt(ler)i tapın.
 
+console.log(sum);
 // 12) key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
+arr.forEach((item) => {
+  if (item.key > 10 && item.name.startsWith("l")) {
+    console.log(item);
+  }
+});
