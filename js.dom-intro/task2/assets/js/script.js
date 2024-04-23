@@ -39,3 +39,5 @@ wrapper.appendChild(card);
 section.appendChild(wrapper);
 
 document.body.appendChild(section);
+
+// Muellim qurupda dediniz 1 denesini yazin sonra dersde for usulu ile basa salacam kopyalamagi ona gore 1 denesini yazdim
