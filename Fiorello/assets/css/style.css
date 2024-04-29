@@ -1,0 +1,22 @@
+.active {
+  display: block !important; }
+
+#header .menu li:hover ul,
+#header .menu-left li:hover ul {
+  display: block !important; }
+
+#header .menu ul,
+#header .menu-left ul {
+  width: 10rem;
+  padding: 1rem;
+  background-color: #fff; }
+
+#section1 {
+  background-color: #f6f6f6;
+  padding: 5rem 0; }
+
+@media only screen and (max-width: 992px) {
+  #header .navbar {
+    display: none; }
+  #header .navbar-mini {
+    display: block !important; } }
