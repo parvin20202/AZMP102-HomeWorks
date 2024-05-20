@@ -1,0 +1,1 @@
+Muellim evde usaq modemi yere saldigina gore sunuru qirilib fiber optik olduguna gore ozum duzelde bilmirem bugun ustalar gelib duzeldecek tapsirigi yazacam
